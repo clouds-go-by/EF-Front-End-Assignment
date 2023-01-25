@@ -1,0 +1,16 @@
+/* you can use these global colors */
+
+:root {
+  --color-grey: #8c8c8c;
+  --color-light-grey: #dadada;
+  --color-white: white;
+
+  --color-blue: #0075e1;
+  --color-blue-light: #e6f2fd;
+
+  --color-red: tomato;
+  --color-red-light: mistyRose;
+
+  --theme-color: var(--color-blue);
+  --theme-color-light: var(--color-blue-light);
+}

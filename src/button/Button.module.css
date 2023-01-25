@@ -1,0 +1,67 @@
+@import "./_button.module.css";
+
+.blue {
+  --theme-color: var(--color-blue);
+  --theme-color-light: var(--color-blue-light);
+}
+
+.red {
+  --theme-color: var(--color-red);
+  --theme-color-light: var(--color-red-light);
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid var(--theme-color);
+}
+
+.primary {
+  color: var(--color-white);
+  background-color: var(--theme-color);
+}
+
+.primary .content svg {
+    fill: var(--color-white);
+}
+
+.primary:disabled {
+  color: var(--color-light-grey);
+  background-color: var(--color-grey);
+  border-color: var(--color-grey);
+}
+
+.primary:disabled .content svg {
+    fill: var(--color-light-grey);
+}
+
+.secondary {
+  color: var(--theme-color);
+  background-color: var(--color-white);
+}
+
+.secondary .content svg {
+    fill: var(--theme-color);
+}
+
+.secondary:hover {
+  background-color: var(--theme-color-light);
+}
+
+.secondary:disabled {
+  color: var(--color-grey);
+  border-color: var(--color-grey);
+  background-color: var(--color-white);
+}
+
+.secondary:disabled .content svg {
+    fill: var(--color-grey);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
